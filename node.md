@@ -22,10 +22,33 @@
       methods是一个方法，它可以接受参数，而computed不能，computed是可以缓存的，methods不会。
       computed可以依赖其他computed，甚至是其他组件的data
       watch 配置
-      handler
-      deep 是否深度
-      immeditate 是否立即执行
+        handler
+        deep 是否深度
+        immeditate 是否立即执行
       总结
       当有一些数据需要随着另外一些数据变化时，建议使用computed。
       当有一个通用的响应数据变化的时候，要执行一些业务逻辑或异步操作的时候建议使用watcher
 ```
+```
+    4.vue的生命周期
+    beforeCreated 组件实例刚被创建
+    created       组件实例创建完成，属性已绑定，但dom还未生成，el属性还不存在
+    beforeMount   挂载实例之前
+    mounted       挂载实例之后
+    beforeUpdate  组件更新之前
+    updated       组件更新之后
+    beforeDestroy 销毁组件之前
+    destroyed     销毁组件之后
+```
+# 2.Vuex
+```
+    1.vuex是什么
+    Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式
+    2.vuex的核心概念
+    state   存储状态
+    getter  获取状态
+    mutation    修改状态
+    action      也可以修改状态，action是通过提交mutation来修改状态
+    module      如果store对象很庞大的化可以将 store 分割成多个模块，每个人模块都拥有自己的state，mutation，action，getter
+```
+   
