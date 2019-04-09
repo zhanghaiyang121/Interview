@@ -16,10 +16,8 @@
 ```
 # javascript
 ### 2.js基础
-    ```
       1.原生js ajax请求步骤
     ```
-    ```javascript
       function loadXMLDoc()
         {
           var xmlhttp;
@@ -48,6 +46,13 @@
           //4.发送HTTP请求；
           xmlhttp.send();
         }
+    ```
+    ```
+      2.post和get的区别
+        请求方式：put，delete，post，get
+        他们的作用分别是对服务器资源的增，删，改，查。 
+        所以，get是获取数据，post是修改数据。
+        GET请求只是简单的获取数据，POST请求会修改请求的资源
     ```
 ### 1.vue
 ```
