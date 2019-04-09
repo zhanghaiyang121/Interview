@@ -15,6 +15,40 @@
     css3动画
 ```
 # javascript
+### 2.js基础
+    ```
+      1.原生js ajax请求步骤
+    ```
+    ```javascript
+      function loadXMLDoc()
+        {
+          var xmlhttp;
+          if (window.XMLHttpRequest)
+          {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            //1.创建ajax对象
+            xmlhttp=new XMLHttpRequest();
+          }
+          else
+          {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          //3.设置响应HTTP状态变化的函数；
+          xmlhttp.onreadystatechange=function()
+          {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+              //5.获取异步调用返回的数据； 
+              document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+            }
+          }
+          //2. 创建一个新的HTTP请求，并指定改HTTP请求的方法、URL以及验证信息； 
+          xmlhttp.open("GET","/try/ajax/ajax_info.txt",true);
+          //4.发送HTTP请求；
+          xmlhttp.send();
+        }
+    ```
 ### 1.vue
 ```
     1.v-if和v-show的区别
