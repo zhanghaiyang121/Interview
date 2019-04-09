@@ -15,7 +15,7 @@
     css3动画
 ```
 # javascript
-### 2.js基础
+### 1.js基础
 
 ```
   1.原生js ajax请求步骤
@@ -55,7 +55,45 @@
     所以，get是获取数据，post是修改数据。
     GET请求只是简单的获取数据，POST请求会修改请求的资源
 ```
-### 1.vue
+```
+  3.localStorage和sessionStorage的区别
+  localStorage生命周期是永久，这意味着除非用户显示在浏览器提供的UI上清除localStorage信息，否则这些信息将永远存在。 sessionStorage生命周期为当前窗口或标签页，一旦窗口或标签页被永久关闭了，那么所有通过sessionStorage存储的数据也就被清空了。
+```
+### 2.es6
+```
+  1.原型链
+  首先明确： 函数（Function）才有prototype属性，对象（除Object）拥有__proto__。
+  通过原型链来查找属性。
+```
+```
+  2.Class类
+  //创建Class类
+  class Student {
+            constructor(name) {
+                this.name = name;
+                this.color='red'
+            }
+
+            hello() {
+                alert('Hello, ' + this.name + '!');
+            }
+        }
+  //用Class类实现继承
+  class PrimaryStudent extends Student {
+      constructor(name, grade) {
+          super(name); // 记得用super调用父类的构造方法!
+          this.grade = grade;
+      }
+
+      myGrade() {
+          alert('I am at grade ' + this.grade);
+      }
+  }
+  let xiaoxiao=new PrimaryStudent('xiaoxiao','二年级')
+  console.log(xiaoxiao)
+```
+
+### 3.vue
 ```
     1.v-if和v-show的区别
       v-show和v-if的区别： v-show是css切换，v-if是完整的销毁和重新创建。

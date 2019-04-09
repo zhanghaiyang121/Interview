@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student {
+            constructor(name) {
+                this.name = name;
+                this.color='red'
+            }
+
+            hello() {
+                alert('Hello, ' + this.name + '!');
+            }
+        }
+        class PrimaryStudent extends Student {
+            constructor(name, grade) {
+                super(name); // 记得用super调用父类的构造方法!
+                this.grade = grade;
+            }
+
+            myGrade() {
+                alert('I am at grade ' + this.grade);
+            }
+        }
+        var a=new PrimaryStudent('san','grade')
+        console.log(a)
+    </script>
+</body>
+</html>
