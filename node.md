@@ -1,4 +1,11 @@
+<a href="#nomal">基础</a>
+<a href="#CSS">CSS</a>
 <a href="#es6">ES6</a>
+<a href="#javascript">javascript</a>
+<a href="#vue">vue</a>
+<a href="#vuex">vuex</a>
+
+<h1 id="nomal">基础</h1>
 
 # 基础
 ```
@@ -12,11 +19,13 @@
       标准盒模型：content+padding+border height和width是content区域
       ie盒模型：  content+padding+border height和width包含padding和border
 ```
-# CSS
+<h1 id="CSS">CSS</h1>
+
 ```
     css3动画
 ```
-# javascript
+<h1 id="javascript">javascript</h1>
+
 ### 1.js基础
 
 ```
@@ -63,7 +72,6 @@
 ```
 <h1 id="es6">ES6</h1>
 
-### 2.es6
 ```
   1.原型链
   首先明确： 函数（Function）才有prototype属性，对象（除Object）拥有__proto__。
@@ -97,7 +105,8 @@
   console.log(xiaoxiao)
 ```
 
-### 3.vue
+<h1 id="vue">vue</h1>
+
 ```
     1.v-if和v-show的区别
       v-show和v-if的区别： v-show是css切换，v-if是完整的销毁和重新创建。
@@ -139,7 +148,8 @@
     beforeDestroy 销毁组件之前
     destroyed     销毁组件之后
 ```
-### 2.Vuex
+<h1 id="vuex">vuex</h1>
+
 ```
     1.vuex是什么
     Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式
