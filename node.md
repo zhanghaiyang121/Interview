@@ -1,9 +1,21 @@
-<a href="#nomal">基础</a>
-<a href="#CSS">CSS</a>
-<a href="#es6">ES6</a>
-<a href="#javascript">javascript</a>
-<a href="#vue">vue</a>
-<a href="#vuex">vuex</a>
+<div>
+  <a href="#nomal">基础</a>
+</div>
+<div>
+  <a href="#CSS">CSS</a>
+</div>
+<div>
+  <a href="#es6">ES6</a>
+</div>
+<div>
+  a href="#javascript">javascript</a>
+</div>
+<div>
+  <a href="#vue">vue</a>
+</div>
+<div>
+  <a href="#vuex">vuex</a>
+</div>
 
 <h1 id="nomal">基础</h1>
 
