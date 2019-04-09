@@ -1,4 +1,21 @@
-# 1.vue
+#基础
+```
+    1.布局
+      静态布局
+      流式布局
+      自适应布局
+      弹性布局
+      响应式布局
+    2.盒模型
+      标准盒模型：content+padding+border height和width是content区域
+      ie盒模型：  content+padding+border height和width包含padding和border
+```
+#CSS
+```
+    css3动画
+```
+#javascript
+### 1.vue
 ```
     1.v-if和v-show的区别
       v-show和v-if的区别： v-show是css切换，v-if是完整的销毁和重新创建。
@@ -40,7 +57,7 @@
     beforeDestroy 销毁组件之前
     destroyed     销毁组件之后
 ```
-# 2.Vuex
+### 2.Vuex
 ```
     1.vuex是什么
     Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式
@@ -51,4 +68,5 @@
     action      也可以修改状态，action是通过提交mutation来修改状态
     module      如果store对象很庞大的化可以将 store 分割成多个模块，每个人模块都拥有自己的state，mutation，action，getter
 ```
+
    
