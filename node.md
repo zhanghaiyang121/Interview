@@ -16,44 +16,45 @@
 ```
 # javascript
 ### 2.js基础
-      1.原生js ajax请求步骤
-    ```
-      function loadXMLDoc()
+
+```
+  1.原生js ajax请求步骤
+  function loadXMLDoc()
+    {
+      var xmlhttp;
+      if (window.XMLHttpRequest)
+      {
+        //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+        //1.创建ajax对象
+        xmlhttp=new XMLHttpRequest();
+      }
+      else
+      {
+        // IE6, IE5 浏览器执行代码
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      //3.设置响应HTTP状态变化的函数；
+      xmlhttp.onreadystatechange=function()
+      {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-          var xmlhttp;
-          if (window.XMLHttpRequest)
-          {
-            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-            //1.创建ajax对象
-            xmlhttp=new XMLHttpRequest();
-          }
-          else
-          {
-            // IE6, IE5 浏览器执行代码
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-          //3.设置响应HTTP状态变化的函数；
-          xmlhttp.onreadystatechange=function()
-          {
-            if (xmlhttp.readyState==4 && xmlhttp.status==200)
-            {
-              //5.获取异步调用返回的数据； 
-              document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-            }
-          }
-          //2. 创建一个新的HTTP请求，并指定改HTTP请求的方法、URL以及验证信息； 
-          xmlhttp.open("GET","/try/ajax/ajax_info.txt",true);
-          //4.发送HTTP请求；
-          xmlhttp.send();
+          //5.获取异步调用返回的数据； 
+          document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
         }
-    ```
-    ```
-      2.post和get的区别
-        请求方式：put，delete，post，get
-        他们的作用分别是对服务器资源的增，删，改，查。 
-        所以，get是获取数据，post是修改数据。
-        GET请求只是简单的获取数据，POST请求会修改请求的资源
-    ```
+      }
+      //2. 创建一个新的HTTP请求，并指定改HTTP请求的方法、URL以及验证信息； 
+      xmlhttp.open("GET","/try/ajax/ajax_info.txt",true);
+      //4.发送HTTP请求；
+      xmlhttp.send();
+    }
+```
+```
+  2.post和get的区别
+    请求方式：put，delete，post，get
+    他们的作用分别是对服务器资源的增，删，改，查。 
+    所以，get是获取数据，post是修改数据。
+    GET请求只是简单的获取数据，POST请求会修改请求的资源
+```
 ### 1.vue
 ```
     1.v-if和v-show的区别
