@@ -1,4 +1,4 @@
-#基础
+# 基础
 ```
     1.布局
       静态布局
@@ -10,11 +10,11 @@
       标准盒模型：content+padding+border height和width是content区域
       ie盒模型：  content+padding+border height和width包含padding和border
 ```
-#CSS
+# CSS
 ```
     css3动画
 ```
-#javascript
+# javascript
 ### 1.vue
 ```
     1.v-if和v-show的区别
