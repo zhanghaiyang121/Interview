@@ -81,6 +81,10 @@
   3.localStorage和sessionStorage的区别
   localStorage生命周期是永久，这意味着除非用户显示在浏览器提供的UI上清除localStorage信息，否则这些信息将永远存在。 sessionStorage生命周期为当前窗口或标签页，一旦窗口或标签页被永久关闭了，那么所有通过sessionStorage存储的数据也就被清空了。
 ```
+```
+  4.jsonp
+  jsonp原理通过src属性访问资源，在路径中传入一个callback函数来调用本地对应的回调函数来获取数据
+```
 <h1 id="es6">ES6</h1>
 
 ```
@@ -115,7 +119,30 @@
   let xiaoxiao=new PrimaryStudent('xiaoxiao','二年级')
   console.log(xiaoxiao)
 ```
+```
+  3.promise
+  //promise是一个对象
+  //promise对象接收一个函数作为参数，该函数接收两个函数作为参数resolve，reject
+  //Promise对象用于异步操作，它表示一个尚未完成且预计在未来完成的异步操作。
+  var promise1 = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+      resolve('foo');
+    }, 300);
+  });
 
+  promise1.then(function(value) {
+    console.log(value);
+    // expected output: "foo"
+  });
+
+  console.log(promise1);
+```
+```
+  4.js处理异步的几种方法
+  回调函数
+  事件监听
+  promise对象
+```
 <h1 id="vue">vue</h1>
 
 ```
