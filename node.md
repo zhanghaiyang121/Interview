@@ -186,6 +186,16 @@
     beforeDestroy 销毁组件之前
     destroyed     销毁组件之后
 ```
+```
+  5.父子组件传递信息
+  父组件给子组件通过props来传递
+  子组件给父组件传值通过emit事件
+```
+```
+  6.兄弟组件传值
+  通过$on来监听事件
+  通过$emit来触发事件
+```
 <h1 id="vuex">vuex</h1>
 
 ```
@@ -198,5 +208,6 @@
     action      也可以修改状态，action是通过提交mutation来修改状态
     module      如果store对象很庞大的化可以将 store 分割成多个模块，每个人模块都拥有自己的state，mutation，action，getter
 ```
+
 
    
