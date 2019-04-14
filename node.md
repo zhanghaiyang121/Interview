@@ -143,6 +143,16 @@
   事件监听
   promise对象
 ```
+```
+  5.assign 对象合并
+  var obj1 = { a : 1 };
+
+  var obj2 = { b : 2 };
+
+  var obj3 = { c : 3 };
+
+  console.log(Object.assign(obj1, obj2, obj3))//{ a : 1, b : 2, c:3 }
+```
 <h1 id="vue">vue</h1>
 
 ```
@@ -195,6 +205,13 @@
   6.兄弟组件传值
   通过$on来监听事件
   通过$emit来触发事件
+```
+```
+  7.mixins
+  定义：混入 (mixins) 是一种分发 Vue 组件中可复用功能的非常灵活的方式。混入对象可以包含任意组件选项。当组件使用混入对象时，所有混入对象的选项将被混入该组件本身的选项。
+  引入mixins的原因：由定义的描述可知，mixins的作用是为了达到复用的一个目的，mixins里可以包含vue组件的任意组件选项。
+  局部引入：在vue文件里引入mixin的js文件，添加mixins选项添加对应的mixin（mixins:[mymixin]）
+  全局引入：在main.js里引入mixin文件，并注册mixin（Vue.mixin(mymixin)）
 ```
 <h1 id="vuex">vuex</h1>
 
