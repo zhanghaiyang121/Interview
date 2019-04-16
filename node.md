@@ -213,6 +213,32 @@
   局部引入：在vue文件里引入mixin的js文件，添加mixins选项添加对应的mixin（mixins:[mymixin]）
   全局引入：在main.js里引入mixin文件，并注册mixin（Vue.mixin(mymixin)）
 ```
+```
+  8.vue双向绑定的实现
+  <body>
+    <div id="demo"></div>
+    <input type="text" id="inp">
+    <script>
+        var obj  = {};
+        var demo = document.querySelector('#demo')
+        var inp = document.querySelector('#inp')
+        Object.defineProperty(obj, 'name', {
+            get: function() {
+                return val;
+            },
+            set: function (newVal) {//当该属性被赋值的时候触发
+                inp.value = newVal;
+                demo.innerHTML = newVal;
+            }
+        })
+        inp.addEventListener('input', function(e) {
+            // 给obj的name属性赋值，进而触发该属性的set方法
+            obj.name = e.target.value;
+        });
+        obj.name = 'fei';//在给obj设置name属性的时候，触发了set这个方法
+    </script>
+  </body>
+```
 <h1 id="vuex">vuex</h1>
 
 ```
